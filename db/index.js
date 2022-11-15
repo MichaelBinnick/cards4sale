@@ -153,7 +153,7 @@ const getListingsByOwnerId = function(id) {
   console.log(`called getListingsByOwnerId`);
   return pool
     .query(`
-      SELECT listings.id, title AS name, description, price, is_sold, is_removed, owner_id, users.name AS owner_name, time_created
+      SELECT listings.id, title AS name, description, price, image_url, is_sold, is_removed, owner_id, users.name AS owner_name, time_created
       FROM listings
       JOIN users ON owner_id = users.id
       WHERE owner_id = $1 AND is_removed = false;
@@ -299,7 +299,7 @@ const getFavoritesByOwnerID = function(id) {
   console.log(`called getFavoritesByOwnerID`);
   return pool
     .query(`
-      SELECT listings.id, title AS name, description, price, is_sold, is_removed, owner_id, time_created
+      SELECT listings.id, title AS name, description, price, image_url, is_sold, is_removed, owner_id, time_created
       FROM listings
       JOIN favorites ON favorites.listing_id = listings.id
       JOIN users ON favorites.user_id = users.id
@@ -449,7 +449,7 @@ const getFilteredListings = function(limit, filters) {
   console.log(`called getFilteredListings`);
   return pool
     .query(`
-      SELECT listings.id, title AS name, description, price, is_sold, is_removed, owner_id, users.name AS owner_name, time_created
+      SELECT listings.id, title AS name, description, price, image_url, is_sold, is_removed, owner_id, users.name AS owner_name, time_created
       FROM listings
       JOIN users ON owner_id = users.id
       WHERE is_removed = false AND price >= $2 AND price <= $3
