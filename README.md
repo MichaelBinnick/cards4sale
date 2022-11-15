@@ -13,31 +13,31 @@ All HTML/CSS styling was completed from scratch.
 
 ## Screenshots
 
-!["Home Page"]()
+!["Home Page"](https://github.com/nchau3/cards4sale/blob/master/docs/home.png)
 
 Home Page
 
-!["Login"]()
+!["Login"](https://github.com/nchau3/cards4sale/blob/master/docs/login.png)
 
 Login Page
 
-!["New Listing"]()
+!["New Listing"](https://github.com/nchau3/cards4sale/blob/master/docs/new-listing.png)
 
 Create a new listing.
 
-!["My Listings"]()
+!["My Listings"](https://github.com/nchau3/cards4sale/blob/master/docs/my-listings.png)
 
 Users can view, update and remove their active listings here.
 
-!["Single Listing"]()
+!["Single Listing"](https://github.com/nchau3/cards4sale/blob/master/docs/single-listing.png)
 
 Contact the seller or add to Favorites for later.
 
-!["Favorites"]()
+!["Favorites"](https://github.com/nchau3/cards4sale/blob/master/docs/favorites.png)
 
 Save your favorite listings.
 
-!["Messages"]()
+!["Messages"](https://github.com/nchau3/cards4sale/blob/master/docs/messages.png)
 
 Contact sellers/buyers to get more details or arrange meetings.
 
@@ -72,11 +72,7 @@ Start server
 npm start
 ```
 
-Start server (for Vagrant machine users)
-
-```sh
-bin/rails s -b 0.0.0.0
-```
+Visit http://localhost:8080/ in the browser.
 
 ## Contact
 
