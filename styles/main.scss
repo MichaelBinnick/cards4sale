@@ -1,4 +1,4 @@
-$background-color: rgb(255, 252, 235);
+$background-color: rgb(255, 254, 248);
 $primary-color: rgb(37, 37, 37);
 $accent-color: rgb(211, 211, 211);
 $default-font: 'Roboto Condensed', sans-serif;
@@ -45,9 +45,10 @@ $text-color: black;
 }
 
 @mixin box-card {
+  border: solid 1px;
+  border-radius: 2px;
   background-color: $accent-color;
   box-shadow: 3px 3px 2px rgb(71, 71, 71);
-  border-radius: 2px;
 }
 
 @mixin page-header {
