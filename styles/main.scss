@@ -45,9 +45,10 @@ $text-color: black;
 }
 
 @mixin box-card {
+  border: solid 1px;
+  border-radius: 2px;
   background-color: $accent-color;
   box-shadow: 3px 3px 2px rgb(71, 71, 71);
-  border-radius: 2px;
 }
 
 @mixin page-header {
